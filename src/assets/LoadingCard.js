@@ -5,7 +5,6 @@ const LoadingCard=()=> {
         <div className="loading-card">
         <div className="image"></div>
         <div className="content">
-          <h2></h2>
           <p></p>
           <p></p>
           <p></p>
