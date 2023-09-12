@@ -1,6 +1,6 @@
 <h1 align="center"> 📖 Miskatonic-Library of Wicca </h1>
 
-This is a simple Library app built with **ReactJS** with **Google Books API** integration.
+This is a simple library app built with **ReactJS** with **Google Books API** integration.
 <br>
 Users can **Search** the books as well as can Read or download any books from **Google Books**.
 <br>
