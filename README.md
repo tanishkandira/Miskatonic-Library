@@ -7,9 +7,10 @@ Users can **Search** the books as well as can Read or download any books from **
 **Fun-fact:** The term **Miskatonic Library** refers to the Library of **Miskatonic University** from [Herbert West–Reanimator](https://en.wikipedia.org/wiki/Herbert_West%E2%80%93Reanimator) of **H.P. Lovecraft**.
 <br>
 More features like Themes, Editor's pick, Personalised book collection etc... are **Coming Soon!**
-<h2 align="center"><a href="https://miskatonic-library.netlify.app/>Enter Miskatonic-Library of Wicca</a></h2>
+<h2 align="center"><a href="https://miskatonic-library.netlify.app/">Enter Miskatonic-Library of Wicca</a></h2>
 
 ### Technology Used:
+
 -> [**ReactJS**](https://react.dev/)
 <br>
 -> [**Google Books API**](https://developers.google.com/books/docs/v1/using)
