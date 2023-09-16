@@ -5,6 +5,7 @@ import SearchForm from './SearchForm';
 import Book from './Book';
 import Footer from './Footer';
 import LoadingCard from './LoadingCard';
+
 function BooksSection() {
     const [details,setDetails] = useState([])
     const [term,setTerm] = useState("Harry Potter")
@@ -14,7 +15,7 @@ function BooksSection() {
         const fetchDetails = async ()=>{
             setIsLoading(true)
             const resources = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=${term}&maxResults=10
+                `https://www.googleapis.com/books/v1/volumes?q=${term}&maxResults=10&key=${process.env.REACT_APP_SECRET_KEY}
                 `
             )
             // console.log(resources.data.items) array of search items
@@ -26,7 +27,7 @@ function BooksSection() {
 
     const loadMore = async ()=>{
         const resources = await axios.get(
-            `https://www.googleapis.com/books/v1/volumes?q=${term}&maxResults=8&startIndex=${details.length}
+            `https://www.googleapis.com/books/v1/volumes?q=${term}&maxResults=8&startIndex=${details.length}&key=${process.env.REACT_APP_SECRET_KEY}
             `
         )
         setDetails((oldDetails)=>[...oldDetails, ...resources.data.items])
